@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Animal_Welfare.DashBoard"
+             Title="Dash Board">
+    <ScrollView>
+    <VerticalStackLayout Margin="10,10,5,0" Spacing="5">
+            
+        <SearchBar x:Name="searchBar"
+       SearchButtonPressed="searchBar_SearchButtonPressed"/>
+
+        <RadioButton CheckedChanged="RadioButton_checked"
+         Content="Male Breed" GroupName="sexGrp"
+         Value="MaleBreed"/>
+        <RadioButton CheckedChanged="RadioButton_checked"
+        Content="Female Breed" GroupName="sexGrp"
+        Value="FemaleBreed"/>
+            <Label Text="Swipe right to add or remove pets to cart" FontSize="18"/>
+            <Label x:Name="InfoLabel"/>
+            <SwipeView Margin="0,10,60,0">
+                <SwipeView.LeftItems>
+                    <SwipeItem Text="Add to Cart"
+                   IconImageSource="addtocart.png"
+                   BackgroundColor="White"
+                   Invoked="SwipeItems_in"/>
+                    <SwipeItem Text="Remove"
+                IconImageSource="remove.svg"
+                BackgroundColor="White"
+                Invoked="SwipeItems_out"/>
+                </SwipeView.LeftItems>
+                <Grid HeightRequest="100"
+                 WidthRequest="300"
+                BackgroundColor="Transparent">
+                    <Image Source="dogo.jpg"
+               HorizontalOptions="Start"/>
+                </Grid>
+            </SwipeView>
+           
+            <SwipeView Margin="0,10,60,0">
+            <SwipeView.LeftItems>
+                <SwipeItem Text="Add to Cart"
+           IconImageSource="addtocart.png"
+           BackgroundColor="White"
+           Invoked="SwipeItems_in"/>
+                <SwipeItem Text="Remove"
+        IconImageSource="remove.svg"
+        BackgroundColor="White"
+        Invoked="SwipeItems_out"/>
+            </SwipeView.LeftItems>
+            <Grid HeightRequest="100"
+         WidthRequest="300"
+        BackgroundColor="Transparent">
+                <Image Source="istockphot.jpg"
+       HorizontalOptions="Start"/>
+            </Grid>
+        </SwipeView>
+
+        <SwipeView Margin="0,10,60,0">
+            <SwipeView.LeftItems>
+                <SwipeItem Text="Add to Cart"
+           IconImageSource="addtocart.png"
+           BackgroundColor="White"
+           Invoked="SwipeItems_in"/>
+                <SwipeItem Text="Remove"
+        IconImageSource="remove.svg"
+        BackgroundColor="White"
+        Invoked="SwipeItems_out"/>
+            </SwipeView.LeftItems>
+            <Grid HeightRequest="100"
+         WidthRequest="300"
+        BackgroundColor="Transparent">
+                <Image Source="juvenile_ragdoll.jpg"
+       HorizontalOptions="Start" WidthRequest="150" HeightRequest="200"/>
+            </Grid>
+        </SwipeView>
+
+            <SwipeView Margin="0,10,60,0">
+                <SwipeView.LeftItems>
+                    <SwipeItem Text="Add to Cart"
+           IconImageSource="addtocart.png"
+           BackgroundColor="White"
+           Invoked="SwipeItems_in"/>
+                    <SwipeItem Text="Remove"
+        IconImageSource="remove.svg"
+        BackgroundColor="White"
+        Invoked="SwipeItems_out"/>
+                </SwipeView.LeftItems>
+                <Grid HeightRequest="100"
+         WidthRequest="300"
+        BackgroundColor="Transparent">
+                    <Image Source="labradorretrieverportrait.jpg"
+       HorizontalOptions="Start"/>
+                </Grid>
+            </SwipeView>
+
+            <SwipeView Margin="0,10,60,0">
+            <SwipeView.LeftItems>
+                <SwipeItem Text="Add to Cart"
+           IconImageSource="addtocart.png"
+           BackgroundColor="White"
+           Invoked="SwipeItems_in"/>
+                <SwipeItem Text="Remove"
+        IconImageSource="remove.svg"
+        BackgroundColor="White"
+        Invoked="SwipeItems_out"/>
+            </SwipeView.LeftItems>
+            <Grid HeightRequest="100"
+         WidthRequest="300"
+        BackgroundColor="Transparent">
+                <Image Source="pexels.jpg"
+       HorizontalOptions="Start"/>
+            </Grid>
+        </SwipeView>
+
+        <SwipeView Margin="0,10,60,0">
+            <SwipeView.LeftItems>
+                <SwipeItem Text="Add to Cart"
+           IconImageSource="addtocart.png"
+           BackgroundColor="White"
+           Invoked="SwipeItems_in"/>
+                <SwipeItem Text="Remove"
+        IconImageSource="remove.svg"
+        BackgroundColor="White"
+        Invoked="SwipeItems_out"/>
+            </SwipeView.LeftItems>
+            <Grid HeightRequest="100"
+         WidthRequest="300"
+        BackgroundColor="Transparent">
+                <Image Source="photo.jpg"
+       HorizontalOptions="Start" WidthRequest="150" HeightRequest="200"/>
+            </Grid>
+        </SwipeView>
+        <SwipeView Margin="0,10,60,0">
+            <SwipeView.LeftItems>
+                <SwipeItem Text="Add to Cart"
+    IconImageSource="addtocart.png"
+    BackgroundColor="White"
+    Invoked="SwipeItems_in"/>
+                <SwipeItem Text="Remove"
+ IconImageSource="remove.svg"
+ BackgroundColor="White"
+ Invoked="SwipeItems_out"/>
+            </SwipeView.LeftItems>
+            <Grid HeightRequest="100"
+  WidthRequest="300"
+ BackgroundColor="Transparent">
+                <Image Source="top.jpg"
+HorizontalOptions="Start" WidthRequest="150"/>
+            </Grid>
+        </SwipeView>
+            <Button Text="Go to Cart" Clicked="CartBtn" BackgroundColor="Purple" FontSize="16" Margin="0,20,5,10" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

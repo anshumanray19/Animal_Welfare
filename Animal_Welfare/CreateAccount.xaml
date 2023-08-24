@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Animal_Welfare.CreateAccount"
+             Title="Create Account">
+    <VerticalStackLayout Margin="10,10,5,0" Spacing="5" >
+        <Label Text="Enter Your First Name" FontSize="16"/>
+        <Entry Placeholder="FirstName" x:Name="FirstName" />
+        <Label Text="Enter Your Last Name" FontSize="16"/>
+        <Entry Placeholder="LastName" x:Name="LastName" />
+        <Label Text="Enter Phone Number" FontSize="16"/>
+        <Entry Placeholder="+91" x:Name="phoneEntry" />
+        <Label Text="Enter Email Id" FontSize="16"/>
+        <Entry Placeholder="Email" x:Name="emailEntry" />
+        <Label Text="Enter Your User Name" FontSize="16"/>
+        <Entry Placeholder="Username" x:Name="Username" />
+        <Label Text="Enter Your Password" FontSize="16"/>
+        <Entry Placeholder="Password" IsPassword="True" x:Name="passwordEntry" />
+        <Label Text="Confirm Your Password" FontSize="16"/>
+        <Entry Placeholder="ConfirmPassword" IsPassword="True" x:Name="ConfirmPasswordEntry" />
+        
+        <Label x:Name="InfoLabel"/>
+        <HorizontalStackLayout>
+            <CheckBox IsChecked="True" Color="Blue"
+          VerticalOptions="Center"
+          CheckedChanged="CheckBox_checked"/>
+            <Label Text="Accept Terms and Conditions "
+       VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+        <Button Text="Create Account" TextColor="White" FontSize="18" BackgroundColor="ForestGreen" VerticalOptions="Center" Clicked="AccountCreated"/>
+
+
+    </VerticalStackLayout>
+    
+</ContentPage>
